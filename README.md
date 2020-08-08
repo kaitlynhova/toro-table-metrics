@@ -1,44 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+This is a frontend challenge for [Toro Data Labs](https://torodata.io/)! It is a tabbed interface where you can view several table's metrics.
 
-In the project directory, you can run:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e67729d-bd80-4fd9-9f4a-778a890df23e/deploy-status)](https://app.netlify.com/sites/priceless-roentgen-81cb50/deploys)
 
-### `yarn start`
+[View it on the staging environment](https://priceless-roentgen-81cb50.netlify.app/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This Project used:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [Figma](https://www.figma.com/file/wLD3OslFCvKxOq3tq3JFKC/Untitled?node-id=0%3A1) wires (turned mocks) for generic reusable structure planning
+- [Create React App](https://github.com/facebook/create-react-app) + Typescript
+- [styled-components](https://styled-components.com/docs/basics)
+- [Deductive Component Language](https://www.hovalabs.com/blog/deductive-component-language)
 
-### `yarn test`
+## Starting the app
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Pull this repo onto your local.
+2. Run these scripts:
 
-### `yarn build`
+   ```
+   yarn install
+   // then,
+   yarn start
+   ```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Open [http://localhost:3000](http://localhost:3000) on Chrome.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run tests, run this script:
 
-### `yarn eject`
+```
+yarn test
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Notes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If this was a project that would see production (and had more time) I would have liked to do a few more things:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Typescript**
+  - Make sure to type request response data and to process it based on it's type (ex: timestamps need to be processed so it's human legible)
+  - **Tests**
+  - Set up continuous integration.
+  - Written endpoint tests to verify that we are getting the data that we expect.
+  - Written component tests using [enzyme](https://enzymejs.github.io/enzyme/).
+  - Written e2e tests.
+- **Optimization**
+  - Done more for web accessibility.
+  - Caching api request responses.
+- **Documentation**
+  - Coordinated more between Figma and the App so that the Figma file is the delivery file (designs & component names).
+  - Install [Storybook](https://storybook.js.org/) to document the reusable components.
+- **Styles**
+  - Made the UI responsive on mobile.
+  - Support all browsers.
+  - Kept track of more styles in the Theme besides palette.
+- **Glitter**
+  - Loading state logic
+  - Finish implementing `isActive` styles
