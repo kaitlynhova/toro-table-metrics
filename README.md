@@ -1,10 +1,11 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e67729d-bd80-4fd9-9f4a-778a890df23e/deploy-status)](https://app.netlify.com/sites/priceless-roentgen-81cb50/deploys)
+
 ## About
 
 This is a frontend challenge for [Toro Data Labs](https://torodata.io/)! It is a tabbed interface where you can view several table's metrics.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6e67729d-bd80-4fd9-9f4a-778a890df23e/deploy-status)](https://app.netlify.com/sites/priceless-roentgen-81cb50/deploys)
 
-[View it on the staging environment](https://priceless-roentgen-81cb50.netlify.app/)
+[View it on the Netlify staging environment](https://priceless-roentgen-81cb50.netlify.app/)
 
 This Project used:
 
