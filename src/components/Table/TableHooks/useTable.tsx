@@ -11,14 +11,13 @@ export const useTable = ({ table }: { table: Table }) => {
   const metricsDictionary: { [key: string]: any } = {};
   metrics.forEach((metric) => {
     if (!metricsDictionary[metric.column]) {
-      metricsDictionary[metric.column] = metric.currentValue;
+      metricsDictionary[
+        metric.column
+      ] = `${metric.metric}: ${metric.currentValue}`;
     } else {
-      const displayValue =
-        metricsDictionary[metric.column] < metric.currentValue
-          ? `${metricsDictionary[metric.column]} - ${metric.currentValue}`
-          : `${metric.currentValue} - ${metricsDictionary[metric.column]}`;
-
-      metricsDictionary[metric.column] = displayValue;
+      metricsDictionary[metric.column] = `${
+        metricsDictionary[metric.column]
+      }, ${metric.metric}: ${metric.currentValue}`;
     }
   });
 
