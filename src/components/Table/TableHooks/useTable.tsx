@@ -29,7 +29,6 @@ export const useTable = ({ table }: { table: Table }) => {
         return response.json();
       })
       .then((data: Metric[]) => {
-        debugger;
         setMetrics(data);
       })
       .catch((error) => {
