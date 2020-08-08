@@ -15,6 +15,7 @@ export const Tab = styled.button<TabProps>`
   padding: 26px;
   text-align: left;
   width: 230px;
+  word-break: break-all;
   &:focus {
     font-weight: bold;
     outline: none;

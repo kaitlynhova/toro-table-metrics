@@ -21,6 +21,7 @@ export const Line = styled.div<LineProps>`
   height: 25px;
   padding: 16px;
   width: ${(p) => `${p.cellWidth}%`};
+  word-break: break-all;
 `;
 
 export const LineItem = styled.div`
