@@ -1,0 +1,1 @@
+export { generateTableColor } from "./UtilsNavigation";
