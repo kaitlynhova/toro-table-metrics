@@ -41,7 +41,7 @@ If this was a project that would see production (and had more time) I would have
 
 - **Typescript**
   - Make sure to type request response data and to process it based on it's type (ex: timestamps need to be processed so it's human legible)
-  - **Tests**
+- **Tests**
   - Set up continuous integration.
   - Written endpoint tests to verify that we are getting the data that we expect.
   - Written component tests using [enzyme](https://enzymejs.github.io/enzyme/).
