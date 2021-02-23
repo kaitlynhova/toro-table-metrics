@@ -2,7 +2,7 @@
 
 ## About
 
-This is a frontend challenge for [Toro Data Labs](https://torodata.io/)! It is a tabbed interface where you can view several table's metrics.
+This is a tabbed interface where you can view several table's metrics.
 
 
 [View it on the Netlify staging environment](https://priceless-roentgen-81cb50.netlify.app/)
